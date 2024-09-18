@@ -2,12 +2,10 @@ import { Bill } from "./bill";
 
 export class ExtraordinaryBill extends Bill {
     private description: string;
-    private amount: number;
 
     constructor(description: string, amount: number) {
-        super();
+        super(amount);
         this.description = description;
-        this.amount = amount;
     }
 
     getDescription(): string {
